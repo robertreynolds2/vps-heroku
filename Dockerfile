@@ -45,6 +45,8 @@ RUN apt-get -qqy update \
     && apt install -qqy --no-install-recommends remmina remmina-plugin-rdp remmina-plugin-secret \
     && apt-add-repository ppa:obsproject/obs-studio \
     && apt update \
+    && apt install python -y \
+    && apt install wget \
     && apt install -qqy --no-install-recommends obs-studio \
     && apt install unzip \
     && apt-get autoclean \
